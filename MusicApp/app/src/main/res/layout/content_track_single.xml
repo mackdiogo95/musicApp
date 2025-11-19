@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TrackActivity"
+    tools:showIn="@layout/app_bar_track_single">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_bio"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informações sobre esta faixa:"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Artista(s):"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Eminem feat. Rihanna"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Álbum:"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onAlbumClick"
+                            android:text="Recovery"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Duração:"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4:15"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ano:"
+                            android:textSize="17dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2010"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Género:"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hip-Hop, RnB"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data de Lançamento:"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09/08/2010"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_lyric"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Letra:"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just gonna stand there\nAnd watch me burn\nBut that's alright\nBecause I like\nThe way it hurts\nJust gonna stand there\nAnd hear me cry\nBut that's alright\nBecause I love\nThe way you lie\nI love the way you lie\n\nI can't tell you what it really is\nI can only tell you what it feels like\nAnd right now it's a steel knife\nIn my windpipe\I can't breathe\nBut I still fight\nWhile I can fight\nAs long as the wrong feels right\nIt's like I'm in flight\nHigh off of love\nDrunk from my hate\nIt's like I'm huffing paint\nAnd I love it the more that I suffer\nI suffocate\nAnd right before I'm about to drown\nShe resuscitates me\nShe f***ing hates me\nAnd I love it\nWait\nWhere you going\nI'm leaving you\nNo you ain't\nCome back\nWe're running right back\nHere we go again\nIt's so insane\nCause when it's going good\nIt's going great\nI'm Superman\nWith the wind at his back\nShe's Lois Lane\nBut when it's bad\nIt's awful\nI feel so ashamed\nI snapped\nWho's that dude\nI don't even know his name\nI laid hands on her\nI'll never stoop so low again\nI guess I don't know my own strength\n\nJust gonna stand there\nAnd watch me burn\nBut that's alright\nBecause I like\nThe way it hurts\nJust gonna stand there\nAnd hear me cry\nBut that's alright\nBecause I love\nThe way you lie\nI love the way you lie\nI love the way you lie\n\nYou ever love somebody so much\nYou can barely breathe\nWhen you're with them\nYou meet\nAnd neither one of you\nEven know what hit 'em\nGot that warm fuzzy feeling\nYeah them chills\nUsed to get 'em\nNow you're getting f***ing sick\nOf looking at 'em\nYou swore you've never hit 'em\nNever do nothing to hurt 'em\nNow you're in each others face\nSpewing venom\nAnd these words\nWhen you spit 'em\nYou push\nPull each other's hair\nScratch, claw, bit 'em\nThrow 'em down\nPin 'em\nSo lost in the moments\nWhen you're in 'em\nIt's the rage that's the culprit\nIt controls you both\nSo they say it's best\nTo go your separate ways\nGuess that they don't know ya\nCause today\nThat was yesterday\nYesterday is over\nIt's a different day\nSound like broken records\nPlayin' over\nBut you promised her\nNext time you'll show restraint\nYou don't get another chance\nLife is no Nintendo game\nBut you lied again\nNow you get to watch her leave\nOut the window\nGuess that's why they call it window pane\n\nJust gonna stand there\nAnd watch me burn\nBut that's alright\nBecause I like\nThe way it hurts\nJust gonna stand there\nAnd hear me cry\nBut that's alright\nBecause I love\nThe way you lie\nI love the way you lie\n\nNow I know we said things\nDid things\nThat we didn't mean\nAnd we fall back\nInto the same patterns\nSame routine\nBut your temper's just as bad\nAs mine is\nYou're the same as me\nBut when it comes to love\nYou're just as blinded\nBaby please come back\nIt wasn't you\nBaby it was me\nMaybe our relationship\nIsn't as crazy as it seems\nMaybe that's what happens\nWhen a tornado meets a volcano\nAll I know is\nI love you too much\nTo walk away now\nCome inside\nPick up your bags off the sidewalk\nDon't you hear sincerity\nIn my voice when I talk\nTold you this is my fault\nLook me in the eyeball\nNext time I'm pissed\nI'll aim my fist\nAt the dry wall\nNext time\nThere will be no next time\nI apologize\nEven though I know it's lies\nI'm tired of the games\nI just want her back\nI know I'm a liar\nIf she ever tries to f***ing leave again\nI'm a tie her to the bed\nAnd set this house on fire\n\nJust gonna stand there\nAnd watch me burn\nBut that's alright\nBecause I like\nThe way it hurts\nJust gonna stand there\nAnd hear me cry\nBut that's alright\nBecause I love\nThe way you lie\nI love the way you lie\nI love the way you lie\n"
+                    android:textSize="16sp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Resultados da pesquisa -->
+
+    <include layout="@layout/search_results"/>
+
+</LinearLayout>

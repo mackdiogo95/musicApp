@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Início" />
+        <item
+            android:id="@+id/nav_artistas"
+            android:icon="@drawable/ic_artist"
+            android:title="Artistas" />
+        <item
+            android:id="@+id/nav_albuns"
+            android:icon="@drawable/ic_album"
+            android:title="Álbuns" />
+        <item
+            android:id="@+id/nav_musicas"
+            android:icon="@drawable/ic_music"
+            android:title="Músicas" />
+        <item
+            android:id="@+id/nav_meus_artistas"
+            android:icon="@drawable/ic_meus_artistas"
+            android:title="Meus Artistas" />
+        <item
+            android:id="@+id/nav_meus_albuns"
+            android:icon="@drawable/ic_meus_albuns"
+            android:title="Meus Álbuns" />
+        <item
+            android:id="@+id/nav_minhas_musicas"
+            android:icon="@drawable/ic_minhas_musicas"
+            android:title="Minhas Músicas" />
+    </group>
+
+    <item android:title="Sair">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_power"
+                android:title="Terminar Sessão" />
+        </menu>
+    </item>
+
+</menu>
